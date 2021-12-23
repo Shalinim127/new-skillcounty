@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssfile/skillcounty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>SkillCounty</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="logoImg" src="./skill images/screeningLogo.svg" alt="logo" />
+            <label class="skillogo">SkillCounty</label>
+        </div>
+
+        <ul class="navitems">
+
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">Login</a></li>
+
+        </ul>
+    </nav>
+    <section class="container mainsection">
+        <div class="topflex">
+            <div>
+                <h1 class="hire">Hire with Evidence</h1>
+                <p class="measure">Measure Skills, Assess Personality & Fit</p>
+                <p class="upgrade">Upgrade your hiring. Use SkillCounty Assessment Platform to hire the right candidates faster and more efficiently.</p>
+                <div><button class="btnup" type="button">Get Started</button>
+                    <button class="btnup" type="button">Start Demo</button></div>
+                <p class="trial">14 days free trial. Then it's $50/Month</p>
+            </div>
+
+            <img class="mockup" src="./skill images/hire-with-evidence.jpeg" alt="main mockup" />
+
+        </div>
+
+    </section>
+
+
+    <section class="concol">
+        <div class="container flex-demo">
+            <div>
+                <h1 class="schedemo">Schedule Demo</h1>
+            </div>
+
+            <div>
+                <div class="contact-form-container">
+                    <div class="form-icon-container">
+                        <div class="icon-container" title="Please fill the form to get an invite code">
+                            <div class="custom-icon">
+                                <div class="inner-text"><i class="fas fa-id-card-alt"></i></div>
+                            </div>
+                        </div>
+                        <form id="new-form-submit" class="form">
+                            <div class="flex">
+                                <label for="Full=name">Name</label>
+                                <input id="full-name" name="Full-name" type="text" placeholder="Enter your name*" required />
+                            </div>
+                            <div class="flex">
+                                <label for="demo-email">Email</label>
+                                <input id="demo-email" name="demoemail" type="email" placeholder="Enter your email*" required />
+                            </div>
+                            <div class="flex">
+                                <label for="demo-phone">Phone</label>
+                                <input id="demo-phone" name="demo-phone" type="phone" placeholder="Enter your phone*" required />
+                            </div>
+                            <div class="flex">
+                                <label for="demo-message">Message</label>
+                                <textarea id="demo-message" name="demo-message" type="text" placeholder="Enter a message" cols="32" rows="4"></textarea>
+                            </div>
+                            <div class="flex-center submit">
+                                <button>Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container2">
+            <div class="boxes">
+                <div class="imgs"><img src="./skill images/hire faster.png"></div>
+                <div class="heads">Hire Faster</div>
+                <div>Our Assessment Marketplace & SkillCounty Question Library range across a broad collection of disciplines and are created by experts. You dont have to think, just pick our questions to create your tests. And in a just a few steps, you are
+                    all setup and ready to go</div>
+            </div>
+            <div class="boxes">
+                <div class="imgs"><img src="./skill images/cost effi.png"></div>
+                <div class="heads">Hire Cost Efficiently</div>
+                <div>We make professional assessments affordable for everyone and streamline the hiring process for any size business. Straight out the box, we are cheaper and easier to use than any other solution in the market.</div>
+            </div>
+            <div class="boxes">
+                <div class="imgs"><img src="./skill images/at scale.png"></div>
+                <div class="heads">Hire at Scale</div>
+                <div>We are made for scale. So, you interview, screen and evaluate as many candidates as you want. So whether you are conducting a 100 interviews or testing a 1000 candidates a day we are ready for you</div>
+            </div>
+            <div class="boxes">
+                <div class="imgs"><img src="./skill images/eliminate.png"></div>
+                <div class="heads">Eliminate Bias & Cheating</div>
+                <div>We provide features like selective masking to curtail bias. Our advanced proctoring capabilities ensure that you can rely on our score. You can monitor and review candidate activity and get detailed reports on it.</div>
+            </div>
+        </div>
+    </section>
+    <section class="container3">
+        <div class="cont">
+            <h1>Hire Verified Skills</h1>
+        </div>
+        <div class="cont2">
+            <p>Set a bar, and that's it. Our assessments will help you hire the best fit.</p>
+        </div>
+        <div>
+            <button class="btn2" type="button">Start Demo</button>
+        </div>
+    </section>
+    <section class="container">
+        <div class="toq">
+            <h1 class="toq-heading">Types of Questions</h1>
+            <div class="btntoq">
+                <button class="btn" id="btn0" onclick="setImage(0)">MCQ's</button>
+                <button class="btn" id="btn1" onclick="setImage(1)">Open Ended</button>
+                <button class="btn" id="btn2" onclick="setImage(2)">Passage</button>
+                <button class="btn" id="btn3" onclick="setImage(3)">Coding</button>
+                <button class="btn" id="btn4" onclick="setImage(4)">Custom Task</button>
+                <button class="btn" id="btn5" onclick="setImage(5)">Audio Based</button>
+                <button class="btn" id="btn6" onclick="setImage(6)">Ranking Based</button>
+
+            </div>
+            <div>
+                <img class="imgtoq" id="codequestion0" src="./skill images/mcq.svg" alt="mcq question">
+                <img class="imgtoq display-none" id="codequestion1" src="./skill images/open-ended.svg" alt="open ended question">
+                <img class="imgtoq display-none" id="codequestion2" src="./skill images/comprehension.svg" alt="passage question">
+                <img class="imgtoq display-none" id="codequestion3" src="./skill images/TT view of Coding Questions.png" alt="passage question">
+                <img class="imgtoq display-none" id="codequestion4" src="./skill images/custom-task.svg" alt="passage question">
+                <img class="imgtoq display-none" id="codequestion5" src="./skill images/audio-only.png" alt="passage question">
+                <img class="imgtoq display-none" id="codequestion6" src="./skill images/video-only.png" alt="passage question">
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container3">
+        <div class="cont3">
+            <h1>Build the best teams with the most affordable solution</h1>
+        </div>
+        <div class="cont4">
+            <p>Sign up for a free 14 days trial. No credit card required, No annual subscription (cancel anytime).</p>
+        </div>
+        <div class="contains">
+            <p class="cont5">It's Only $50 per month*</p>
+        </div>
+        <div class="cont4">
+            <p>Payment link will be sent in email after trial ends.</p>
+        </div>
+    </section>
+    <!-- coding test and coding interview made easy -->
+    <section class="container">
+        <div class="toq">
+            <h1 class="toq-heading">Coding Test & Coding Interview made EASY</h1>
+            <div class="btntoq">
+                <button class="btn" onclick="setImage(0)">Pair Programming</button>
+                <button class="btn" onclick="setImage(1)">Coding Assessment</button>
+                <button class="btn" onclick="setImage(2)">Intellisense</button>
+
+            </div>
+
+            <div>
+                <img class="libpic" src="/skill images/coding.svg">
+            </div>
+
+
+
+
+
+
+    </section>
+
+    <section class="container3">
+        <div class="cont3">
+            <h1>SkillCounty Question Library</h1>
+        </div>
+        <div class="cont4">
+            <p>Our library covers a wide variety of topics & job roles. Plus, we are constantly adding more. You can create a test using our questions in under 1 min. It is that THAT EASY!!</p>
+        </div>
+        <div class="cont4">
+            <img class="libpic" src="/skill images/library.svg">
+        </div>
+    </section>
+
+
+    <script src="./jsfile/skillcounty.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
