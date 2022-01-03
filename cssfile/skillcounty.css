@@ -1,1360 +1,955 @@
-                            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-                            @import "./responsive.css";
-                             :root {
-                                --primary: rgb(35, 109, 165);
-                                --light: white;
-                                --secondary: rgb(239, 239, 248);
-                                --tertiary: rgb(241, 243, 249);
-                                --large: 1.4rem;
-                                --medium: 1.1rem;
-                                --small: 0.8rem;
-                            }
-                            
-                            html {
-                                scroll-behavior: smooth;
-                            }
-                            
-                            * {
-                                padding: 0;
-                                margin: 0;
-                                text-decoration: none;
-                                list-style: none;
-                                box-sizing: border-box;
-                            }
-                            
-                            body {
-                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                            }
-                            
-                            nav {
-                                height: 64px;
-                                width: 100%;
-                            }
-                            
-                            nav ul {
-                                float: right;
-                                margin-right: 20px;
-                            }
-                            
-                            nav ul li {
-                                display: inline-block;
-                                line-height: 60px;
-                                margin: 0 5px;
-                            }
-                            
-                            nav li a {
-                                text-transform: inherit;
-                                margin: 0 1rem;
-                                text-decoration: none;
-                                color: var(--primary);
-                                font-size: 1.25rem;
-                                font-weight: 500;
-                            }
-                            
-                            .pro {
-                                color: #303031;
-                                font-weight: 450;
-                            }
-                            
-                            .logo {
-                                display: flex;
-                                align-items: center;
-                                margin-left: 3.5rem;
-                                font-size: 35px;
-                            }
-                            
-                            .logoImg {
-                                height: 38px;
-                                fill: var(--primary);
-                            }
-                            
-                            .skillogo {
-                                color: var(--primary);
-                                font-size: 2rem;
-                                line-height: 80px;
-                                padding: 0 10px;
-                                font-weight: bold;
-                            }
-                            
-                            .navbar {
-                                display: flex;
-                                justify-content: space-between;
-                                margin-bottom: 2rem;
-                            }
-                            
-                            .navitems {
-                                display: flex;
-                                align-items: center;
-                                margin-right: 3.5rem;
-                            }
-                            
-                            .nav li a .in {
-                                font-weight: 700;
-                                margin-right: 6px;
-                                font-size: 1.3rem;
-                            }
-                            /* hire with evidence */
-                            
-                            .container {
-                                max-width: 1350px;
-                                margin: 0 auto !important;
-                            }
-                            
-                            .measure {
-                                font-size: 1.5rem;
-                                font-weight: bold;
-                                margin: 0.8rem 0;
-                                color: #236da5;
-                            }
-                            
-                            .upgrade {
-                                align-items: center;
-                                font-size: 1.125rem;
-                                letter-spacing: 1.2px;
-                                line-height: 28px;
-                                color: #303031;
-                            }
-                            
-                            .topflex {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                            }
-                            
-                            .mockup {
-                                width: 56rem;
-                                margin-top: -2rem;
-                            }
-                            
-                            .trial {
-                                font-size: 1rem;
-                                font-weight: 450;
-                                margin-top: 20px;
-                                color: #767678;
-                            }
-                            
-                            .hire {
-                                font-size: 64px;
-                                color: #141c23;
-                                margin-top: 3rem;
-                            }
-                            
-                            .btn {
-                                border: none;
-                                outline: none;
-                                border-radius: 4px;
-                                background-color: var(--primary);
-                                color: white;
-                                margin: 0 1rem;
-                                padding: 0.5rem 1.2rem;
-                                font-size: 1rem;
-                                transition: all 0.4s ease-in-out;
-                            }
-                            /* schedule demo */
-                            
-                            .concol {
-                                background-color: var(--primary);
-                                padding: 4rem;
-                                margin-top: 1rem;
-                                height: 45rem;
-                            }
-                            
-                            .flex-demo {
-                                display: flex;
-                                justify-content: space-evenly;
-                                align-items: center;
-                            }
-                            
-                            .demoimgcontainer {
-                                padding: 1rem;
-                                border: 3px solid white;
-                                display: inline-block;
-                                border-radius: 50%;
-                                position: absolute;
-                                top: 50%;
-                                left: 0;
-                                transform: translate(-50%, -50%);
-                                overflow: hidden;
-                                background-color: var(--primary);
-                            }
-                            
-                            .demoimgcontainer img {
-                                width: 2rem;
-                                height: 2rem;
-                            }
-                            
-                            .schedemo {
-                                color: white;
-                                font-size: 3rem;
-                            }
-                            
-                            .demoborder {
-                                border: 3px solid white;
-                                position: relative;
-                                padding: 14px 80px;
-                                border-radius: 10px;
-                            }
-                            /* cards */
-                            
-                            .feature {
-                                position: relative;
-                            }
-                            
-                            .boxes {
-                                /* border: 3px solid rgb(130, 189, 199); */
-                                height: 315px;
-                                width: 300px;
-                                background-color: white;
-                                color: #808089;
-                                padding: 20px;
-                                font-size: 14px;
-                                line-height: 155%;
-                                margin: 1rem;
-                                margin-top: 5rem;
-                                /* align-items: center; */
-                                /* text-align: left; */
-                                border-radius: 10px;
-                                box-shadow: 0px 0px 2px 2px #d3d3d3;
-                                -webkit-box-shadow: 0px 0px 2px 2px #d3d3d3;
-                                -moz-box-shadow: 0px 0px 2px 2px #d3d3d3;
-                            }
-                            
-                            .card {
-                                position: absolute;
-                                top: -15rem;
-                            }
-                            
-                            .newone {
-                                font-size: 16px;
-                                font-weight: 550;
-                                color: #808089;
-                                margin-bottom: 1.2rem;
-                            }
-                            
-                            .heads {
-                                width: 50%;
-                                font-size: 1.5rem;
-                                font-weight: 650;
-                                color: #5f5f67;
-                                margin-bottom: 0.5rem;
-                                display: inline-block;
-                                line-height: 28px;
-                            }
-                            
-                            .downbox {
-                                height: 280px;
-                            }
-                            
-                            .change {
-                                margin-bottom: 2.5rem;
-                            }
-                            
-                            .imgs {
-                                margin-bottom: 0.5rem;
-                                display: inline-block;
-                                width: 100px;
-                                height: 100px;
-                                margin-right: 0.5rem;
-                            }
-                            
-                            .imgs img {
-                                width: 70px;
-                                height: 70px;
-                                margin-left: 2rem;
-                                margin-top: 1rem;
-                            }
-                            /* Hire Verified Skills */
-                            
-                            .container3 {
-                                color: var(--primary);
-                                margin: 20rem;
-                            }
-                            
-                            .cont {
-                                font-size: 3rem;
-                                text-align: center;
-                                font-weight: bold;
-                            }
-                            
-                            .cont2 {
-                                padding-top: 12px;
-                                font-size: 18px;
-                                margin-bottom: 1rem;
-                                text-align: center;
-                            }
-                            
-                            .parentbtn {
-                                display: flex;
-                                justify-content: center;
-                            }
-                            
-                            .btnup {
-                                color: white;
-                                background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
-                                border: none;
-                                padding: 20px 24px;
-                                cursor: pointer;
-                                border-radius: 8px;
-                                margin-top: 2.5rem;
-                                font-size: 1.2rem;
-                                font-weight: 550;
-                                margin-right: 1.5rem;
-                            }
-                            
-                            .downbtn {
-                                margin-top: 40px;
-                            }
-                            
-                            .questimg {
-                                background-color: var(--primary);
-                                display: flex;
-                                justify-content: center;
-                            }
-                            /* types of question */
-                            
-                            .toq {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            
-                            .btntoq {
-                                margin: 1rem;
-                            }
-                            
-                            .leftmain {
-                                margin-top: -2rem;
-                                margin-left: -5.3rem;
-                            }
-                            
-                            .newcontainer {
-                                position: relative;
-                                text-align: left;
-                                padding-right: 7rem;
-                            }
-                            
-                            .overlap {
-                                position: absolute;
-                                top: 1rem;
-                                left: -2rem;
-                            }
-                            
-                            .mainsection {
-                                width: 99.5%;
-                            }
-                            
-                            .left {
-                                width: 50%;
-                                background-image: url('../skill images/leftside.png');
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                            }
-                            
-                            .right {
-                                width: 50%;
-                                background-image: url('../skill images/mainimg.png');
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                            }
-                            
-                            .container2 {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                /* padding: 0 6rem; */
-                                /* padding-left: 6rem; */
-                            }
-                            
-                            .container-2 {
-                                padding-left: 6rem;
-                            }
-                            
-                            input,
-                            textarea {
-                                font-size: 1rem;
-                                padding: 0.3rem;
-                                margin: 0.4rem 0;
-                                border: none;
-                                border-radius: 5px;
-                                border-bottom: 2px solid var(--secondary);
-                                outline: none;
-                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                            }
-                            
-                            #demo-message {
-                                border: 2px solid var(--secondary);
-                            }
-                            
-                            .flex-center-form-footer {
-                                display: flex;
-                                justify-content: flex-end;
-                            }
-                            
-                            .clear {
-                                margin-right: 1rem;
-                                padding: 0 1rem;
-                                font-size: 1rem;
-                                color: var(--primary);
-                                font-weight: 600;
-                                border: none;
-                                outline: none;
-                                background-color: white;
-                                border-radius: 5px;
-                            }
-                            
-                            .clear:hover {
-                                background-color: var(--tertiary);
-                            }
-                            
-                            .submit button:hover {
-                                background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
-                                color: white;
-                            }
-                            
-                            .btn2 {
-                                /* color: var(--primary); */
-                                /* background-color: whitesmoke; */
-                                border: none;
-                                padding: 0.5rem 1.1rem;
-                                cursor: pointer;
-                                border-radius: 10px;
-                                margin-top: 0.5rem;
-                                font-size: 1.5rem;
-                                font-weight: 530;
-                                margin-bottom: 2rem;
-                            }
-                            
-                            .btn {
-                                border: none;
-                                outline: none;
-                                border-radius: 4px;
-                                color: var(--primary);
-                                margin: 0 1rem;
-                                padding: 0.5rem 1.2rem;
-                                font-size: 1rem;
-                                transition: all 0.4s ease-in-out;
-                                background-color: rgb(186, 199, 233);
-                            }
-                            
-                            .feature2 {
-                                background-color: var(--primary);
-                                margin-top: 15rem;
-                                height: 40rem;
-                            }
-                            
-                            .toq-heading {
-                                margin: 2rem 0;
-                                font-size: 2rem;
-                                color: var(--primary);
-                            }
-                            
-                            .btn:hover {
-                                background-color: var(--primary);
-                                color: var(--light);
-                            }
-                            
-                            .toq {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            
-                            .imgtoq {
-                                margin: 2rem 0;
-                                width: 1063px;
-                                height: 480px;
-                                border-radius: 10px;
-                                /* border: 1px solid lightgray; */
-                                padding: 0.8rem 1rem;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            /* flow */
-                            
-                            .flowpart {
-                                position: relative;
-                                top: 40%;
-                                /* margin-top: 5rem; */
-                                width: 98.5%;
-                            }
-                            
-                            .flow {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                            }
-                            
-                            .circlecont {
-                                border-top: 2.5px dashed white;
-                                position: relative;
-                                width: 100vw;
-                            }
-                            
-                            .textss {
-                                text-align: center;
-                                font-size: 18px;
-                                color: white;
-                                justify-content: space-evenly;
-                            }
-                            
-                            .justin {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                flex-direction: column;
-                            }
-                            
-                            .circlewrapper {
-                                position: absolute;
-                                top: -2.5rem;
-                                /* transform: translate(-50%, -50%); */
-                                width: 100vw;
-                                display: flex;
-                                justify-content: space-evenly;
-                            }
-                            
-                            .useof {
-                                font-size: 48px;
-                                color: white;
-                                margin-bottom: 8rem;
-                            }
-                            
-                            .circle {
-                                background-color: var(--primary);
-                                border: 2px solid white;
-                                border-radius: 50%;
-                                padding: 0.3rem;
-                                font-size: 1.8rem;
-                                width: 80px;
-                                height: 80px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            
-                            .circle i {
-                                width: 60px;
-                                height: 60px;
-                                background-color: white;
-                                color: var(--primary);
-                                border: 2px solid white;
-                                padding: 0.5rem;
-                                border-radius: 50%;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            /* Schedule Demo */
-                            
-                            .active {
-                                background-color: var(--primary);
-                                color: var(--light);
-                            }
-                            
-                            .display-none {
-                                display: none;
-                            }
-                            
-                            .display-block {
-                                display: block;
-                            }
-                            
-                            .container {
-                                max-width: 1350px;
-                                margin: 0 auto !important;
-                            }
-                            
-                            .flex {
-                                display: flex;
-                                flex-direction: column;
-                                margin: 0.6rem 0;
-                            }
-                            
-                            label {
-                                font-size: 1rem;
-                                color: var(--primary);
-                                font-weight: 500;
-                            }
-                            
-                            .inner-text {
-                                transform: rotate(-45deg);
-                            }
-                            
-                            .icon-container {
-                                padding: 1rem;
-                                width: 70px;
-                                height: 70px;
-                                z-index: 2;
-                            }
-                            
-                            .inner-text i {
-                                font-size: 1.8rem;
-                                margin: 0.5rem;
-                                color: var(--primary);
-                            }
-                            
-                            .form {
-                                padding: 1.5rem;
-                                padding-bottom: 1.5rem;
-                                padding-top: 2rem;
-                                background-color: var(--light);
-                                border-radius: 5px;
-                                border: 2px solid rgb(226, 223, 223);
-                                margin-bottom: 0.5rem;
-                                z-index: 1;
-                            }
-                            
-                            .form-icon-container {
-                                position: relative;
-                            }
-                            
-                            .icon-container {
-                                position: absolute;
-                                top: -47px;
-                                left: 50%;
-                                transform: translateX(-50%);
-                            }
-                            
-                            .custom-icon {
-                                display: inline-block;
-                                width: 50px;
-                                height: 50px;
-                                border: 3px solid var(--primary);
-                                transform: rotate(45deg);
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                border-radius: 8px;
-                                padding: 1rem;
-                                background-color: var(--light);
-                            }
-                            
-                            .submit button {
-                                cursor: pointer;
-                                font-size: 1.2rem;
-                                background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
-                                padding: 0.5rem 1.4rem;
-                                font-weight: 400;
-                                color: white;
-                                outline: none;
-                                border: none;
-                                border-radius: 5px;
-                                border: 1px solid var(--primary);
-                                transition: all 0.3s ease-in-out;
-                            }
-                            
-                            .submit button:hover {
-                                background-image: linear-gradient(to bottom, #3194DE 40%, #13466D 90%);
-                                color: white;
-                                font-weight: 500;
-                            }
-                            /* pricing */
-                            
-                            .trialone {
-                                display: flex;
-                                text-align: left;
-                                align-items: center;
-                            }
-                            
-                            .pricepic {
-                                width: 750px;
-                                height: 463px;
-                                margin-right: -5rem;
-                                margin-bottom: 112px;
-                                margin-top: 112px;
-                            }
-                            
-                            .pricehead {
-                                color: var(--primary);
-                                font-size: 48px;
-                                font-weight: bold;
-                                text-align: left;
-                                padding: 1rem 0rem;
-                            }
-                            
-                            .pricetag {
-                                font-size: 24px;
-                                color: #236da5;
-                                font-weight: bold;
-                                margin-top: 1.5rem;
-                                margin-bottom: 1rem;
-                            }
-                            
-                            .pricehead2 {
-                                font-size: 48px;
-                                padding: 10px;
-                            }
-                            
-                            .codeinfo {
-                                text-align: center;
-                                color: white;
-                                background-color: var(--primary);
-                            }
-                            
-                            .insidetext {
-                                font-size: 18px;
-                                padding-top: 1rem;
-                                padding-bottom: 1rem;
-                                text-align: center;
-                            }
-                            /* question library */
-                            
-                            .grad {
-                                background-image: linear-gradient(to bottom, rgb(31, 110, 170, 1) 16.46%, rgb(240, 254, 248, 1));
-                                text-align: center;
-                                color: white;
-                            }
-                            
-                            .libpic {
-                                width: 1280px;
-                                height: 582px;
-                                padding: 40px;
-                            }
-                            /* marketplace */
-                            
-                            .marketplace {
-                                display: flex;
-                                justify-content: center;
-                                background-image: linear-gradient(to bottom, rgba(240, 254, 248, 1), rgba(240, 254, 248, 0.1) 100%);
-                            }
-                            
-                            .marketpic {
-                                margin-top: 150px;
-                                margin-bottom: 115px;
-                                width: 738px;
-                                height: 406px;
-                            }
-                            
-                            .whtsnew {
-                                text-align: left;
-                                margin-top: 150px;
-                                margin-bottom: 115px;
-                                padding: 1rem;
-                                color: #353645;
-                            }
-                            
-                            .bold1 {
-                                font-size: 24px;
-                            }
-                            
-                            .whtsnew2 {
-                                font-size: 48px;
-                                padding-bottom: 80px;
-                                color: var(--primary);
-                            }
-                            /* pricing */
-                            
-                            .cont3 {
-                                text-align: center;
-                                margin: 1.5rem;
-                                padding: 2rem;
-                                /* color: black; */
-                                font-size: 2rem;
-                            }
-                            
-                            .cont4 {
-                                text-align: center;
-                                color: white;
-                                padding: 1rem;
-                            }
-                            
-                            .contains {
-                                width: 80%;
-                                align-items: center;
-                                text-align: center;
-                                margin-left: 32rem;
-                            }
-                            
-                            .cont5 {
-                                text-align: center;
-                                background-color: white;
-                                width: 30%;
-                                color: #236da5;
-                                font-size: 29px;
-                                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-                                font-weight: 500;
-                                line-height: 1.2;
-                                letter-spacing: -0.24px;
-                            }
-                            /* back to top */
-                            
-                            #myBtn {
-                                width: 55px;
-                                height: 55px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: fixed;
-                                bottom: 2rem;
-                                right: 2rem;
-                                z-index: 99;
-                                border: white;
-                                outline: white;
-                                background-color: rgb(243, 236, 236);
-                                color: rgb(90, 86, 86);
-                                cursor: pointer;
-                                padding: 10px;
-                                border-radius: 50%;
-                                font-size: 18px;
-                                box-shadow: 0px 6px 12px -6px #423b3b;
-                                -webkit-box-shadow: 0px 6px 12px -6px #1b1a1a;
-                                -moz-box-shadow: 0px 6px 12px -2px #6d5d5d;
-                            }
-                            
-                            #myBtn i {
-                                font-size: 2rem;
-                            }
-                            
-                            #myBtn:hover {
-                                background-color: rgb(174, 226, 250);
-                                color: var(--primary);
-                            }
-                            /* footer */
-                            
-                            #footer {
-                                padding: 1rem 0;
-                            }
-                            
-                            #copyright {
-                                text-align: center;
-                                font-size: 1rem;
-                                color: var(--primary);
-                                padding: 1rem;
-                            }
-                            
-                            #footerLogo {
-                                width: 3rem;
-                                fill: var(--primary);
-                                margin-left: 90px;
-                                margin-right: 10px;
-                                margin-bottom: 52px;
-                            }
-                            
-                            .county {
-                                font-size: 1.7rem;
-                                margin-right: 40rem;
-                                color: var(--primary);
-                                margin-bottom: 52px;
-                            }
-                            
-                            .textpart {
-                                padding-right: 20px;
-                                margin-bottom: 52px;
-                            }
-                            
-                            #full-name2 {
-                                border: none;
-                                outline: none;
-                                width: 70%;
-                            }
-                            
-                            .rightpart {
-                                display: flex;
-                                margin-right: 80px;
-                            }
-                            
-                            .footerBody {
-                                display: flex;
-                                justify-content: space-between;
-                                /* color: var(--light); */
-                                align-items: center;
-                            }
-                            
-                            .logs {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                            }
-                            
-                            .icons {
-                                display: flex;
-                                color: var(--light);
-                            }
-                            
-                            .icons i {
-                                margin: 0 0.3rem;
-                                cursor: pointer;
-                                margin-top: 0.2rem;
-                                border: 1px solid var(--light);
-                                border-radius: 50%;
-                                padding: 0.4rem;
-                                transition: all 0.3s ease-in-out;
-                            }
-                            
-                            .icons i:hover {
-                                background-color: var(--light);
-                                color: var(--primary);
-                            }
-                            
-                            .icons i:nth-child(1) {
-                                margin-left: 0;
-                                padding: 0.4rem 0.5rem;
-                            }
-                            
-                            .address {
-                                margin-bottom: 0.2rem;
-                            }
-                            
-                            .copyRight {
-                                margin-bottom: -4rem;
-                            }
-                            
-                            .down {
-                                text-align: center;
-                                cursor: pointer;
-                                background-color: #dbdbdf;
-                            }
-                            
-                            .inp {
-                                padding: 10px;
-                                border-radius: 5px;
-                                outline: none;
-                                border: none;
-                                font-size: 1rem;
-                            }
-                            
-                            .inp:after {
-                                content: "<";
-                            }
-                            /* footer */
-                            
-                            .footpart {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                border-bottom: 2px solid rgb(202, 202, 202);
-                            }
-                            
-                            .upperfoot {
-                                border-bottom: 2px solid rgb(139, 139, 139);
-                            }
-                            
-                            .col {
-                                padding: 40px;
-                                line-height: 25px;
-                                font-size: 14px;
-                            }
-                            
-                            .out {
-                                border: 2px;
-                                box-shadow: rgb(27, 26, 26) 80%;
-                                border-radius: 50%;
-                            }
-                            
-                            .follow {
-                                margin-top: -2rem;
-                            }
-                            
-                            .follow i {
-                                border-radius: 50%;
-                                justify-content: center;
-                                align-items: center;
-                                padding: 6px;
-                                box-shadow: 0px 6px 12px -6px #423b3b;
-                                -webkit-box-shadow: 0px 6px 12px -6px #1b1a1a;
-                                -moz-box-shadow: 0px 6px 12px -2px #6d5d5d;
-                            }
-                            
-                            .end {
-                                text-align: center;
-                                color: var(--primary);
-                                font-size: 12px;
-                                padding: 1rem;
-                            }
-                            
-                            .input-box {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                height: 2.5rem;
-                                width: 40%;
-                                border: 2px solid gray;
-                                border-radius: 5px;
-                            }
-                            
-                            .send {
-                                border-left: 2px solid gray;
-                                padding: 0 1.1rem;
-                                height: 100%;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                cursor: pointer;
-                            }
-                            
-                            .send:hover {
-                                background-color: var(--primary);
-                                color: white;
-                                border-radius: 5px;
-                            }
-                            
-                            li i {
-                                font-size: 2rem;
-                                color: var(--primary);
-                            }
-                            
-                            #nav-iconn {
-                                display: none;
-                            }
-                            
-                            #nav-itemm {
-                                display: block;
-                            }
-                            /* @media(max-width:1270px) {
-                                .mockup {
-                                    width: 35rem;
-                                    margin-top: -3rem;
-                                    height: 32rem;
+                                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+                                @import "./responsive.css";
+                                 :root {
+                                    --primary: rgb(35, 109, 165);
+                                    --light: white;
+                                    --secondary: rgb(239, 239, 248);
+                                    --tertiary: rgb(241, 243, 249);
+                                    --large: 1.4rem;
+                                    --medium: 1.1rem;
+                                    --small: 0.8rem;
                                 }
-                                #nav-iconn {
-                                    display: none;
+                                
+                                html {
+                                    scroll-behavior: smooth;
                                 }
-                                #nav-itemm {
-                                    display: block;
+                                
+                                * {
+                                    padding: 0;
+                                    margin: 0;
+                                    text-decoration: none;
+                                    list-style: none;
+                                    box-sizing: border-box;
                                 }
-                            }
-                             */
-                            /* @media(max-width:1170px) {
-                                .mockup {
-                                    width: 29rem;
-                                    margin-top: -3rem;
-                                    height: 30rem;
+                                
+                                body {
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                                 }
-                                .flex-demo {
-                                    flex-direction: column;
+                                
+                                a.navbar-brand.myone {
+                                    color: var(--primary);
+                                    font-weight: 635;
+                                }
+                                
+                                .skillogo {
+                                    color: var(--primary);
+                                    font-size: 2rem;
+                                    line-height: 80px;
+                                    padding: 0 10px;
+                                    font-weight: bold;
+                                }
+                                
+                                .text-primary {
+                                    color: var(--primary);
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                }
+                                
+                                .nav-item {
+                                    color: rgb(35, 109, 165);
+                                }
+                                
+                                .navbar-nav {
+                                    font-size: 18px;
+                                    color: var(--primary);
+                                }
+                                
+                                ul li a {
+                                    color: var(--primary);
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                }
+                                
+                                .topflex {
+                                    display: flex;
+                                    justify-content: space-between;
                                     align-items: center;
                                 }
-                                .demoborder {
-                                    margin-bottom: 5rem;
-                                }
-                                .concol {
-                                    padding-bottom: 52rem;
-                                }
-                                .imgs {
-                                    margin-right: 0;
-                                    margin-bottom: 0.5rem;
-                                    /* display: inline-block;
-                                     width: 100px;
-                                    height: 100px;
-                                }
-                                .boxes {
-                                    width: 250px;
-                                }
-                                .container-2 {
-                                    padding-left: 1.5rem;
-                                }
-                                .pricepic {
-                                    margin-right: 1rem;
-                                }
-                                .libpic {
-                                    width: 1000px;
-                                    height: 500px;
-                                }
-                                .marketpic {
-                                    width: 550px;
-                                }
-                                .county {
-                                    margin-right: 16rem;
-                                }
-                            } */
-                            
-                            @media (max-width:900px) {
-                                .skillogo {
-                                    padding: 7px 13px;
-                                    border-radius: 3px;
-                                }
-                                .navitems li a {
-                                    font-weight: 400;
-                                }
-                                .in.active,
-                                .in:hover {
-                                    background: #1b9bff;
-                                    /* transition: .3s; */
-                                    padding: 7px 13px;
-                                    border-radius: 3px;
-                                }
-                                .in {
-                                    font-size: 1.3rem;
-                                }
-                                .concol {
-                                    margin-top: 23rem;
-                                }
-                                .topflex {
-                                    flex-direction: column-reverse;
-                                }
-                                #nav-iconn {
-                                    display: block;
-                                }
-                                #nav-itemm {
-                                    display: none;
-                                }
+                                
                                 .mockup {
-                                    width: 100%;
-                                    margin-top: -3rem;
-                                    height: 30rem;
-                                    opacity: 40%;
+                                    width: 38rem;
+                                    margin-top: 1rem;
                                 }
+                                
+                                .measure {
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                    margin: 0.8rem 0;
+                                    color: #236da5;
+                                }
+                                
+                                .upgrade {
+                                    align-items: center;
+                                    font-size: 1.125rem;
+                                    letter-spacing: 1.2px;
+                                    line-height: 28px;
+                                    color: #303031;
+                                }
+                                
+                                .trial {
+                                    font-size: 1rem;
+                                    font-weight: 450;
+                                    margin-top: 20px;
+                                    color: #767678;
+                                }
+                                
+                                .hire {
+                                    font-size: 64px;
+                                    color: #141c23;
+                                    margin-top: 3rem;
+                                }
+                                
+                                .btn {
+                                    border: none;
+                                    outline: none;
+                                    border-radius: 4px;
+                                    background-color: var(--primary);
+                                    color: white;
+                                    margin: 0 1rem;
+                                    padding: 0.5rem 1.2rem;
+                                    font-size: 1rem;
+                                    transition: all 0.4s ease-in-out;
+                                }
+                                
+                                .mainsection {
+                                    width: 99.5%;
+                                }
+                                
                                 .leftmain {
-                                    display: none;
+                                    margin-top: 2rem;
+                                    margin-left: -3.3rem;
                                 }
+                                
+                                .newcontainer {
+                                    position: relative;
+                                    text-align: left;
+                                    padding-right: 7rem;
+                                }
+                                
                                 .overlap {
                                     position: absolute;
-                                    top: -15rem;
-                                    left: -14rem;
-                                    width: 40rem;
-                                    background-color: transparent;
-                                    text-align: center;
-                                    line-break: auto;
+                                    top: 1rem;
+                                    left: 1rem;
                                 }
-                                .container2 {
+                                
+                                .btnup {
+                                    color: white;
+                                    background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
+                                    border: none;
+                                    padding: 20px 24px;
+                                    cursor: pointer;
+                                    border-radius: 8px;
+                                    margin-top: 2.5rem;
+                                    font-size: 1.2rem;
+                                    font-weight: 550;
+                                    margin-right: 1.5rem;
+                                }
+                                
+                                .concol {
+                                    background-color: var(--primary);
+                                    padding: 4rem;
+                                    margin-top: 6rem;
+                                    height: 50rem;
+                                }
+                                
+                                .flex-demo {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                }
+                                
+                                .demoimgcontainer {
+                                    padding: 1rem;
+                                    border: 3px solid white;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translate(-50%, -50%);
+                                    overflow: hidden;
+                                    background-color: var(--primary);
+                                }
+                                
+                                .demoimgcontainer img {
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                                
+                                .schedemo {
+                                    color: white;
+                                    font-size: 3rem;
+                                }
+                                
+                                .demoborder {
+                                    border: 3px solid white;
+                                    position: relative;
+                                    padding: 14px 80px;
+                                    border-radius: 10px;
+                                }
+                                
+                                input,
+                                textarea {
+                                    font-size: 1rem;
+                                    padding: 0.3rem;
+                                    margin: 0.4rem 0;
+                                    border: none;
+                                    border-radius: 5px;
+                                    border-bottom: 2px solid var(--secondary);
+                                    outline: none;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                }
+                                
+                                #demo-message {
+                                    border: 2px solid var(--secondary);
+                                }
+                                
+                                .flex-center-form-footer {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                }
+                                
+                                .clear {
+                                    margin-right: 1rem;
+                                    padding: 0 1rem;
+                                    font-size: 1rem;
+                                    color: var(--primary);
+                                    font-weight: 600;
+                                    border: none;
+                                    outline: none;
+                                    background-color: white;
+                                    border-radius: 5px;
+                                }
+                                
+                                .clear:hover {
+                                    background-color: var(--tertiary);
+                                }
+                                
+                                .submit button:hover {
+                                    background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
+                                    color: white;
+                                }
+                                
+                                .active {
+                                    background-color: var(--primary);
+                                    color: var(--light);
+                                }
+                                
+                                .display-none {
+                                    display: none;
+                                }
+                                
+                                .display-block {
+                                    display: block;
+                                }
+                                
+                                .container {
+                                    max-width: 1350px;
+                                    margin: 0 auto !important;
+                                }
+                                
+                                .flex {
+                                    display: flex;
                                     flex-direction: column;
-                                    padding: 0 5rem;
+                                    margin: 0.6rem 0;
                                 }
-                                .container3 {
-                                    margin: 0px;
-                                    width: 94vw;
-                                    margin-top: 60rem;
-                                    margin-bottom: 18rem;
+                                
+                                label {
+                                    font-size: 1rem;
+                                    color: var(--primary);
+                                    font-weight: 500;
                                 }
-                                .feature2 {
-                                    height: 80rem;
+                                
+                                .inner-text {
+                                    transform: rotate(-45deg);
                                 }
-                                .useof {
-                                    margin-bottom: 8rem;
-                                    margin-top: 25rem;
-                                }
-                                .btn {
-                                    margin: 0 1rem;
-                                    padding: 10px 10px;
-                                    font-size: 10px;
-                                }
-                                .imgtoq {
-                                    width: 835px;
-                                    height: 380px;
-                                }
-                                .circle {
-                                    height: 70px;
+                                
+                                .icon-container {
+                                    padding: 1rem;
                                     width: 70px;
+                                    height: 70px;
+                                    z-index: 2;
                                 }
+                                
+                                .inner-text i {
+                                    font-size: 1.8rem;
+                                    margin: 0.5rem;
+                                    color: var(--primary);
+                                }
+                                
+                                .form {
+                                    padding: 1.5rem;
+                                    padding-bottom: 1.5rem;
+                                    padding-top: 2rem;
+                                    background-color: var(--light);
+                                    border-radius: 5px;
+                                    border: 2px solid rgb(226, 223, 223);
+                                    margin-bottom: 0.5rem;
+                                    z-index: 1;
+                                }
+                                
+                                .form-icon-container {
+                                    position: relative;
+                                }
+                                
+                                .icon-container {
+                                    position: absolute;
+                                    top: -47px;
+                                    left: 50%;
+                                }
+                                
+                                .col-md-2 {
+                                    flex: 0 0 auto;
+                                    width: 25rem;
+                                }
+                                
+                                .custom-icon {
+                                    display: inline-block;
+                                    width: 50px;
+                                    height: 50px;
+                                    border: 3px solid var(--primary);
+                                    transform: rotate(45deg);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 8px;
+                                    padding: 1rem;
+                                    background-color: var(--light);
+                                }
+                                
+                                .submit button {
+                                    cursor: pointer;
+                                    font-size: 1.2rem;
+                                    background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
+                                    padding: 0.5rem 1.4rem;
+                                    font-weight: 400;
+                                    color: white;
+                                    outline: none;
+                                    border: none;
+                                    border-radius: 5px;
+                                    border: 1px solid var(--primary);
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                
+                                .submit button:hover {
+                                    background-image: linear-gradient(to bottom, #3194DE 40%, #13466D 90%);
+                                    color: white;
+                                    font-weight: 500;
+                                }
+                                
+                                .feature {
+                                    position: relative;
+                                }
+                                
+                                .boxes {
+                                    height: 315px;
+                                    width: 300px;
+                                    background-color: white;
+                                    color: #808089;
+                                    padding: 20px;
+                                    font-size: 14px;
+                                    line-height: 155%;
+                                    margin: 1rem;
+                                    margin-top: 5rem;
+                                    border-radius: 10px;
+                                    box-shadow: 0px 0px 2px 2px #d3d3d3;
+                                    -webkit-box-shadow: 0px 0px 2px 2px #d3d3d3;
+                                    -moz-box-shadow: 0px 0px 2px 2px #d3d3d3;
+                                }
+                                
+                                .cardx {
+                                    position: absolute;
+                                    top: -15rem;
+                                }
+                                
+                                .container2 {
+                                    display: flex;
+                                    flex-direction: row;
+                                    /* align-items: center;
+                                justify-content: center; */
+                                }
+                                
+                                .cardup {
+                                    height: 21rem;
+                                }
+                                
+                                .cardn {
+                                    height: 18rem;
+                                }
+                                
+                                .newone {
+                                    font-size: 16px;
+                                    font-weight: 550;
+                                    color: #808089;
+                                }
+                                
+                                .mx-auto .boxesdes {
+                                    margin-right: auto!important;
+                                    margin-left: auto!important;
+                                    margin-top: -10rem;
+                                }
+                                
+                                .heads {
+                                    width: 50%;
+                                    font-size: 1.5rem;
+                                    font-weight: 650;
+                                    color: #5f5f67;
+                                    margin-bottom: 0.5rem;
+                                    display: inline-block;
+                                    line-height: 28px;
+                                }
+                                
+                                .downbox {
+                                    height: 280px;
+                                }
+                                
+                                .change {
+                                    margin-bottom: 2.5rem;
+                                }
+                                
+                                .imgs {
+                                    margin-bottom: 0.5rem;
+                                    display: inline-block;
+                                    width: 100px;
+                                    height: 100px;
+                                    margin-right: 0.5rem;
+                                }
+                                
+                                .imgs img {
+                                    width: 70px;
+                                    height: 70px;
+                                    margin-left: 2rem;
+                                    margin-top: 1rem;
+                                }
+                                
+                                .card-group {
+                                    align-items: center;
+                                    margin-top: -15rem;
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                }
+                                
+                                .container3 {
+                                    color: var(--primary);
+                                    margin: 20rem;
+                                }
+                                
+                                .cont {
+                                    font-size: 3rem;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                                
+                                .cont2 {
+                                    padding-top: 12px;
+                                    font-size: 18px;
+                                    margin-bottom: 1rem;
+                                    text-align: center;
+                                }
+                                
+                                .parentbtn {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                
+                                .btnup {
+                                    color: white;
+                                    background-image: linear-gradient(to bottom, #3194DE 10%, #13466D 90%);
+                                    border: none;
+                                    padding: 20px 24px;
+                                    cursor: pointer;
+                                    border-radius: 8px;
+                                    margin-top: 2.5rem;
+                                    font-size: 1.2rem;
+                                    font-weight: 550;
+                                    margin-right: 1.5rem;
+                                }
+                                
+                                .downbtn {
+                                    margin-top: 40px;
+                                }
+                                
+                                .flowpart {
+                                    background: var(--primary);
+                                    position: relative;
+                                    top: -40%;
+                                    width: 98.5%;
+                                }
+                                
+                                .flow {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    height: 400px;
+                                }
+                                
+                                .circlecont {
+                                    border-top: 2.5px dashed white;
+                                    position: relative;
+                                    width: 100vw;
+                                }
+                                
                                 .textss {
-                                    font-size: 12px;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    color: white;
+                                    justify-content: space-evenly;
                                 }
+                                
                                 .justin {
                                     display: flex;
                                     align-items: center;
+                                    justify-content: center;
                                     flex-direction: column;
                                 }
-                                .boxes {
-                                    width: 600px;
-                                    height: 250px;
-                                    margin-top: 1rem;
+                                
+                                .circlewrapper {
+                                    position: absolute;
+                                    top: -2.5rem;
+                                    width: 100vw;
                                 }
-                                .pricepic {
-                                    margin-top: -5rem;
-                                    margin-bottom: 32px;
+                                
+                                .useof {
+                                    font-size: 48px;
+                                    color: white;
+                                    margin-bottom: 8rem;
                                 }
-                                .trialone {
-                                    flex-direction: column;
-                                    padding: 1rem;
-                                }
-                                .libpic {
-                                    width: 600px;
-                                    height: 363px;
-                                    padding: 18px;
-                                }
-                                .pricehead2 {
-                                    font-size: 44px;
-                                }
-                                .marketplace {
-                                    flex-direction: column;
+                                
+                                .circle {
+                                    background-color: var(--primary);
+                                    border: 2px solid white;
+                                    border-radius: 50%;
+                                    padding: 0.3rem;
+                                    font-size: 1.8rem;
+                                    width: 80px;
+                                    height: 80px;
+                                    display: flex;
+                                    justify-content: center;
                                     align-items: center;
                                 }
-                                .whtsnew {
-                                    margin-top: 3px;
-                                    margin-bottom: -110px;
-                                    text-align: center;
-                                }
-                                .logs {
-                                    flex-direction: column-reverse;
-                                }
-                                .whtsnew2 {
-                                    padding-bottom: 27px;
-                                }
-                                .rightpart {
-                                    flex-direction: column;
+                                
+                                .circle i {
+                                    width: 60px;
+                                    height: 60px;
+                                    background-color: white;
+                                    color: var(--primary);
+                                    border: 2px solid white;
+                                    padding: 0.5rem;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
                                     align-items: center;
-                                    width: 80%;
-                                    margin-right: 0px;
                                 }
-                                .textpart {
-                                    text-align: center;
-                                    font-weight: bold;
-                                    padding-right: 0;
-                                    margin-bottom: 25px;
+                                
+                                .questimg {
+                                    background-color: var(--primary);
+                                    display: flex;
+                                    justify-content: center;
                                 }
-                                .marketpic {
-                                    margin-top: 156px;
-                                    width: 623px;
-                                    height: 327px;
-                                }
-                                .county {
-                                    display: none;
-                                }
-                                #full-name2 {
-                                    width: 30rem;
-                                }
-                                #footerLogo {
-                                    display: none;
-                                }
-                                .input-box {
+                                
+                                .btntoq {
                                     margin: 1rem;
                                 }
-                            }
-                            
-                            @media (max-width:374px) {
-                                .navbar {
-                                    margin-bottom: 3rem;
+                                
+                                .toq-heading {
+                                    margin: 2rem 0;
+                                    font-size: 2rem;
+                                    color: var(--primary);
                                 }
-                                .nav ul li {
-                                    margin: 7px 26px;
+                                
+                                .btn:hover {
+                                    background-color: var(--primary);
+                                    color: var(--light);
                                 }
-                                .logoImg {
-                                    margin-left: -40px;
-                                }
-                                .skillogo {
-                                    padding: 3px 46px;
-                                }
-                                .mockup {
-                                    height: 21rem;
-                                }
-                                .overlap {
-                                    position: absolute;
-                                    top: -15rem;
-                                    left: -8rem;
-                                    width: 92vw;
-                                    background-color: transparent;
-                                    text-align: center;
-                                    line-break: auto;
-                                }
-                                .flowpart {
-                                    margin-top: 50rem;
-                                }
-                                .hire {
-                                    font-size: 38px;
-                                }
-                                .circlecont {
-                                    border-top: none;
-                                    width: 10rem;
-                                }
-                                .measure {
-                                    font-size: 18px;
-                                }
-                                .upgrade {
-                                    font-size: 10px;
-                                    letter-spacing: 1px;
-                                    line-height: 18px;
-                                }
-                                .btnup {
-                                    padding: 11px 13px;
-                                    margin-top: 0.5rem;
-                                    font-size: 1rem;
-                                }
-                                .trial {
-                                    font-size: 12px;
-                                }
-                                .concol {
-                                    margin-top: 5rem;
-                                }
-                                .schedemo {
-                                    font-size: 1.5rem;
-                                }
-                                .demoborder {
-                                    margin-bottom: 5rem;
-                                    padding-left: 1.5rem;
-                                    padding-right: 0.1rem;
-                                }
-                                .circlewrapper {
+                                
+                                .toq {
+                                    display: flex;
                                     flex-direction: column;
-                                }
-                                .boxes {
-                                    width: 314px;
-                                    height: auto;
-                                    margin-top: 1rem;
-                                }
-                                .container2 {
-                                    padding: 0;
-                                }
-                                .container3 {
-                                    margin: 0px;
-                                    width: 94vw;
-                                    margin-top: 60rem;
-                                }
-                                .cont {
-                                    margin-top: 70rem;
-                                }
-                                .demoimgcontainer {
-                                    padding: 0.4rem;
-                                }
-                                .demoimgcontainer img {
-                                    width: 1.5rem;
-                                    height: 1.5rem;
-                                }
-                                .libpic {
-                                    width: 320px;
-                                    height: 200px;
-                                    padding: 2px;
-                                }
-                                .marketpic {
-                                    margin-top: 156px;
-                                    width: 320px;
-                                    height: 200px;
-                                }
-                                .input-box {
-                                    width: 80%;
-                                }
-                                .logs {
+                                    justify-content: center;
                                     align-items: center;
                                 }
-                                .col {
-                                    padding: 8px;
-                                    line-height: 15px;
-                                    font-size: 8px;
-                                }
-                                .col2 h5 {
-                                    font-size: 10px;
-                                }
-                                .pricehead2 {
-                                    font-size: 32px;
-                                }
-                                .pricehead {
-                                    font-size: 34px;
-                                }
-                                .btn {
-                                    font-size: 10px;
-                                    padding: 3px 6px;
-                                    margin: 3px 5px;
-                                }
-                                .insidetext {
-                                    font-size: 12px;
-                                }
-                                .pricepic {
-                                    width: 300px;
-                                    height: 250px;
-                                    margin-top: 0.5px;
-                                }
-                                .pric {
-                                    font-size: 12px;
-                                }
-                                .pricetag {
-                                    font-size: 20px;
-                                    margin-top: 0.5rem;
-                                    margin-bottom: 0rem;
-                                }
+                                
                                 .imgtoq {
-                                    width: 356px;
-                                    height: 150px;
-                                    padding: 2px;
+                                    margin: 2rem 0;
+                                    width: 1063px;
+                                    height: 480px;
+                                    border-radius: 10px;
+                                    padding: 0.8rem 1rem;
+                                    align-items: center;
+                                    justify-content: center;
                                 }
-                            }
+                                
+                                .trialone {
+                                    display: flex;
+                                    text-align: left;
+                                    align-items: center;
+                                }
+                                
+                                .pricehead {
+                                    color: var(--primary);
+                                    font-size: 48px;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    padding: 1rem 0rem;
+                                }
+                                
+                                .pricetag {
+                                    font-size: 24px;
+                                    color: #236da5;
+                                    font-weight: bold;
+                                    margin-top: 1.5rem;
+                                    margin-bottom: 1rem;
+                                }
+                                
+                                .pricehead2 {
+                                    font-size: 48px;
+                                    padding: 10px;
+                                }
+                                
+                                .codeinfo {
+                                    text-align: center;
+                                    color: white;
+                                    background-color: var(--primary);
+                                }
+                                
+                                .insidetext {
+                                    font-size: 18px;
+                                    padding-top: 1rem;
+                                    padding-bottom: 1rem;
+                                    text-align: center;
+                                }
+                                
+                                .libpic {
+                                    width: 80%;
+                                    height: 582px;
+                                }
+                                
+                                .grad {
+                                    background-image: linear-gradient(to bottom, rgb(31, 110, 170, 1) 16.46%, rgb(240, 254, 248, 1));
+                                    text-align: center;
+                                    color: white;
+                                }
+                                
+                                .libpic {
+                                    width: 80%;
+                                    height: 582px;
+                                }
+                                
+                                .marketplace {
+                                    display: flex;
+                                    justify-content: center;
+                                    background-image: linear-gradient(to bottom, rgba(240, 254, 248, 1), rgba(240, 254, 248, 0.1) 100%);
+                                }
+                                
+                                .marketpic {
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    width: 738px;
+                                    height: 406px;
+                                }
+                                
+                                .whtsnew {
+                                    text-align: left;
+                                    padding: 1rem;
+                                    text-align: center;
+                                    color: #353645;
+                                }
+                                
+                                .bold1 {
+                                    font-size: 24px;
+                                }
+                                
+                                .whtsnew2 {
+                                    font-size: 48px;
+                                    color: var(--primary);
+                                }
+                                
+                                .cont4 {
+                                    text-align: center;
+                                    color: white;
+                                    padding: 1rem;
+                                }
+                                
+                                #footer {
+                                    padding: 1rem 0;
+                                }
+                                
+                                #copyright {
+                                    text-align: center;
+                                    font-size: 1rem;
+                                    color: var(--primary);
+                                    padding: 1rem;
+                                }
+                                
+                                #footerLogo {
+                                    width: 3rem;
+                                    fill: var(--primary);
+                                    margin-left: 90px;
+                                    margin-right: 10px;
+                                    margin-bottom: 52px;
+                                }
+                                
+                                .county {
+                                    font-size: 1.7rem;
+                                    margin-right: 2rem;
+                                    left: 1rem;
+                                    color: var(--primary);
+                                    margin-bottom: 52px;
+                                }
+                                
+                                .textpart {
+                                    padding-right: 20px;
+                                    margin-bottom: 52px;
+                                }
+                                
+                                #full-name2 {
+                                    border: none;
+                                    outline: none;
+                                    width: 70%;
+                                }
+                                
+                                .rightpart {
+                                    display: flex;
+                                    margin-right: 80px;
+                                }
+                                
+                                .footerBody {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                
+                                .logs {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                                
+                                .icons {
+                                    display: flex;
+                                    color: var(--light);
+                                }
+                                
+                                .icons i {
+                                    margin: 0 0.3rem;
+                                    cursor: pointer;
+                                    margin-top: 0.2rem;
+                                    border: 1px solid var(--light);
+                                    border-radius: 50%;
+                                    padding: 0.4rem;
+                                    transition: all 0.3s ease-in-out;
+                                }
+                                
+                                .icons i:hover {
+                                    background-color: var(--light);
+                                    color: var(--primary);
+                                }
+                                
+                                .icons i:nth-child(1) {
+                                    margin-left: 0;
+                                    padding: 0.4rem 0.5rem;
+                                }
+                                
+                                .address {
+                                    margin-bottom: 0.2rem;
+                                }
+                                
+                                .copyRight {
+                                    margin-bottom: -4rem;
+                                }
+                                
+                                .down {
+                                    text-align: center;
+                                    cursor: pointer;
+                                    background-color: #dbdbdf;
+                                }
+                                
+                                .inp {
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    outline: none;
+                                    border: none;
+                                    font-size: 1rem;
+                                }
+                                
+                                .itsimg {
+                                    flex-direction: column;
+                                }
+                                
+                                .inp:after {
+                                    content: "<";
+                                }
+                                
+                                .footpart {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    border-bottom: 2px solid rgb(202, 202, 202);
+                                }
+                                
+                                .upperfoot {
+                                    border-bottom: 2px solid rgb(139, 139, 139);
+                                }
+                                
+                                .col {
+                                    padding: 40px;
+                                    line-height: 25px;
+                                    font-size: 14px;
+                                }
+                                
+                                .out {
+                                    border: 2px;
+                                    box-shadow: rgb(27, 26, 26) 80%;
+                                    border-radius: 50%;
+                                }
+                                
+                                .follow {
+                                    margin-top: -2rem;
+                                }
+                                
+                                .follow i {
+                                    border-radius: 50%;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 6px;
+                                    box-shadow: 0px 6px 12px -6px #423b3b;
+                                    -webkit-box-shadow: 0px 6px 12px -6px #1b1a1a;
+                                    -moz-box-shadow: 0px 6px 12px -2px #6d5d5d;
+                                }
+                                
+                                .end {
+                                    text-align: center;
+                                    color: var(--primary);
+                                    font-size: 12px;
+                                    padding: 1rem;
+                                }
+                                
+                                .input-box {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    height: 2.5rem;
+                                    width: 40%;
+                                    border: 2px solid gray;
+                                    border-radius: 5px;
+                                }
+                                
+                                .send {
+                                    border-left: 2px solid gray;
+                                    padding: 0 1.1rem;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                }
+                                
+                                .send:hover {
+                                    background-color: var(--primary);
+                                    color: white;
+                                    border-radius: 5px;
+                                }
+                                
+                                li i {
+                                    font-size: 2rem;
+                                    color: var(--primary);
+                                }
+                                
+                                #nav-iconn {
+                                    display: none;
+                                }
+                                
+                                #nav-itemm {
+                                    display: block;
+                                }
+                                
+                                @media(max-width: 901px) {
+                                    .join {
+                                        display: block;
+                                    }
+                                    .itsimg {
+                                        flex-direction: column;
+                                        margin-top: 0;
+                                        margin-left: -5rem;
+                                    }
+                                }
+                                
+                                @media(max-width:768px) {
+                                    .flowpart {
+                                        height: 85rem;
+                                    }
+                                    .justin {
+                                        flex-direction: row;
+                                    }
+                                    .textss {
+                                        width: 10rem;
+                                        margin: 2rem 1rem;
+                                    }
+                                    .circlecont {
+                                        border-top: 0px dashed white;
+                                        position: relative;
+                                        width: 100vw;
+                                        border-right: 2px dashed white;
+                                    }
+                                    .line1 {
+                                        position: absolute;
+                                        border-right: 2px dashed white;
+                                        width: 60px;
+                                        height: 12rem;
+                                        left: 9.5rem;
+                                        z-index: -1;
+                                    }
+                                    .circlewrapper {
+                                        position: absolute;
+                                        top: 0;
+                                        width: 100vw;
+                                        z-index: 1;
+                                    }
+                                    .itsimg {
+                                        flex-direction: column;
+                                        margin-top: 0;
+                                        margin-left: 0;
+                                    }
+                                }
+                                
+                                @media(max-width:575px) {
+                                    .justin {
+                                        flex-direction: row;
+                                    }
+                                    .textss {
+                                        width: 10rem;
+                                        margin: 2rem 1rem;
+                                    }
+                                    .circlecont {
+                                        border-top: 0px dashed white;
+                                        position: relative;
+                                        width: 100vw;
+                                        border-right: 2px dashed white;
+                                    }
+                                    .line1 {
+                                        position: absolute;
+                                        border-right: 2px dashed white;
+                                        width: 60px;
+                                        height: 12rem;
+                                        left: 9.5rem;
+                                        z-index: -1;
+                                    }
+                                    .circlewrapper {
+                                        position: absolute;
+                                        top: 0;
+                                        width: 100vw;
+                                        z-index: 1;
+                                    }
+                                    .newcontainer {
+                                        flex-direction: column;
+                                    }
+                                    .trialone {
+                                        text-align: left;
+                                        align-items: center;
+                                    }
+                                    .itsimg {
+                                        flex-direction: column;
+                                        margin-top: 0;
+                                        margin-left: 0;
+                                    }
+                                }
